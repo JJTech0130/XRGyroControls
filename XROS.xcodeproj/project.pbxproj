@@ -12,7 +12,18 @@
 		48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCB712A4604D8009ABEF4 /* CoreSimulator */; };
 		48BDCBC82A46142D009ABEF4 /* SimulatorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48BDCBCD2A46144B009ABEF4 /* SimulatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDCBCC2A46144B009ABEF4 /* SimulatorKit.swift */; };
+		48BDCBCE2A4614E9009ABEF4 /* SimulatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48BDCBCF2A4614ED009ABEF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48BBE93A2A44D6CA005E4CF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48BDCBC42A46142D009ABEF4;
+			remoteInfo = SimulatorKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		48BD02EC2A44DCED005E818E /* CopyFiles */ = {
@@ -104,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BDCBCE2A4614E9009ABEF4 /* SimulatorKit.framework in Frameworks */,
 				48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +263,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				48BDCBD02A4614ED009ABEF4 /* PBXTargetDependency */,
 			);
 			name = XROS;
 			productName = XROS;
@@ -348,6 +361,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48BDCBD02A4614ED009ABEF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48BDCBC42A46142D009ABEF4 /* SimulatorKit */;
+			targetProxy = 48BDCBCF2A4614ED009ABEF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		48BBE9442A44D6CA005E4CF8 /* Debug */ = {
