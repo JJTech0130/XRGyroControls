@@ -3,8 +3,3 @@
 //
 
 #import <CoreSimulator/SimDevice.h>
-#import <Foundation/Foundation.h>
-
-//@protocol _TtP12SimulatorKit28SimDeviceUserInterfacePlugin_ <NSObject>
-//@end
-
