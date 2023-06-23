@@ -1,0 +1,10 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import <CoreSimulator/SimDevice.h>
+#import <Foundation/Foundation.h>
+
+//@protocol _TtP12SimulatorKit28SimDeviceUserInterfacePlugin_ <NSObject>
+//@end
+
