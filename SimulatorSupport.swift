@@ -1,9 +1,9 @@
 import Foundation
 import SimulatorKit
 
-@objc class PalomaSimSupport : NSObject, SimDeviceUserInterfacePlugin {
+@objc class SimulatorSupport : NSObject, SimDeviceUserInterfacePlugin {
     @objc init(with: SimDevice) {
-        print("Initialized with device: \(with)")
+        print("XRGyroControls: Initialized with device: \(with)")
     }
     
     @objc func overlayView() {

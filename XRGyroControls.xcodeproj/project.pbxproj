@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48BBE94A2A44D80A005E4CF8 /* PalomaSimSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* PalomaSimSupport.swift */; };
+		48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */; };
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCB712A4604D8009ABEF4 /* CoreSimulator */; };
 		48BDCBC82A46142D009ABEF4 /* SimulatorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
-		48BBE9492A44D80A005E4CF8 /* PalomaSimSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalomaSimSupport.swift; sourceTree = "<group>"; };
+		48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSupport.swift; sourceTree = "<group>"; };
 		48BD02F32A44E1AB005E818E /* XROS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XROS-Bridging-Header.h"; sourceTree = "<group>"; };
 		48BD02F72A44E375005E818E /* SimDeviceIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIOClient.h; sourceTree = "<group>"; };
 		48BD02F82A44E375005E818E /* SimDeviceSet+Removed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceSet+Removed.h"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				48BD02F62A44E375005E818E /* CoreSimulator */,
-				48BBE9492A44D80A005E4CF8 /* PalomaSimSupport.swift */,
+				48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */,
 				48BDCBC62A46142D009ABEF4 /* SimulatorKit */,
 				48BBE9432A44D6CA005E4CF8 /* Products */,
 				48BD02EE2A44DF64005E818E /* Frameworks */,
@@ -348,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BBE94A2A44D80A005E4CF8 /* PalomaSimSupport.swift in Sources */,
+				48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +499,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "${SRCROOT}";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).PalomaSimSupport";
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
@@ -527,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "${SRCROOT}";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).PalomaSimSupport";
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
