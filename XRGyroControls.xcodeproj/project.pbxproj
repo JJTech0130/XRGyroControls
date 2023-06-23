@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48BBE94A2A44D80A005E4CF8 /* PalomaSimSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* PalomaSimSupport.swift */; };
-		48BD02ED2A44DCF6005E818E /* XROS.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XROS.simdeviceui */; };
+		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCB712A4604D8009ABEF4 /* CoreSimulator */; };
 		48BDCBC82A46142D009ABEF4 /* SimulatorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48BDCBCD2A46144B009ABEF4 /* SimulatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDCBCC2A46144B009ABEF4 /* SimulatorKit.swift */; };
@@ -32,14 +32,14 @@
 			dstPath = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/UserInterface";
 			dstSubfolderSpec = 0;
 			files = (
-				48BD02ED2A44DCF6005E818E /* XROS.simdeviceui in CopyFiles */,
+				48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		48BBE9422A44D6CA005E4CF8 /* XROS.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XROS.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
+		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBE9492A44D80A005E4CF8 /* PalomaSimSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalomaSimSupport.swift; sourceTree = "<group>"; };
 		48BD02F32A44E1AB005E818E /* XROS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XROS-Bridging-Header.h"; sourceTree = "<group>"; };
 		48BD02F72A44E375005E818E /* SimDeviceIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIOClient.h; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		48BBE9432A44D6CA005E4CF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48BBE9422A44D6CA005E4CF8 /* XROS.simdeviceui */,
+				48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */,
 				48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */,
 			);
 			name = Products;
@@ -251,9 +251,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		48BBE9412A44D6CA005E4CF8 /* XROS */ = {
+		48BBE9412A44D6CA005E4CF8 /* XRGyroControls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XROS" */;
+			buildConfigurationList = 48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControls" */;
 			buildPhases = (
 				48BBE93E2A44D6CA005E4CF8 /* Sources */,
 				48BBE93F2A44D6CA005E4CF8 /* Frameworks */,
@@ -265,9 +265,9 @@
 			dependencies = (
 				48BDCBD02A4614ED009ABEF4 /* PBXTargetDependency */,
 			);
-			name = XROS;
+			name = XRGyroControls;
 			productName = XROS;
-			productReference = 48BBE9422A44D6CA005E4CF8 /* XROS.simdeviceui */;
+			productReference = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */;
 			productType = "com.apple.product-type.bundle";
 		};
 		48BDCBC42A46142D009ABEF4 /* SimulatorKit */ = {
@@ -307,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 48BBE93D2A44D6CA005E4CF8 /* Build configuration list for PBXProject "XROS" */;
+			buildConfigurationList = 48BBE93D2A44D6CA005E4CF8 /* Build configuration list for PBXProject "XRGyroControls" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,7 +320,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48BBE9412A44D6CA005E4CF8 /* XROS */,
+				48BBE9412A44D6CA005E4CF8 /* XRGyroControls */,
 				48BDCBC42A46142D009ABEF4 /* SimulatorKit */,
 			);
 		};
@@ -490,16 +490,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "${SRCROOT}";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = XROS.PalomaSimSupport;
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).PalomaSimSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
@@ -518,16 +518,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "${SRCROOT}";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = XROS.PalomaSimSupport;
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).PalomaSimSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
@@ -613,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48BBE93D2A44D6CA005E4CF8 /* Build configuration list for PBXProject "XROS" */ = {
+		48BBE93D2A44D6CA005E4CF8 /* Build configuration list for PBXProject "XRGyroControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48BBE9442A44D6CA005E4CF8 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XROS" */ = {
+		48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48BBE9472A44D6CA005E4CF8 /* Debug */,
