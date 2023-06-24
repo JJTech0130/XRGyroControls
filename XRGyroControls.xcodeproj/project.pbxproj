@@ -9,21 +9,11 @@
 /* Begin PBXBuildFile section */
 		48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */; };
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
-		48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCB712A4604D8009ABEF4 /* CoreSimulator */; };
-		48BDCBC82A46142D009ABEF4 /* SimulatorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48BDCBCD2A46144B009ABEF4 /* SimulatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDCBCC2A46144B009ABEF4 /* SimulatorKit.swift */; };
-		48BDCBCE2A4614E9009ABEF4 /* SimulatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */; };
+		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
+		48BDCD6E2A47882C009ABEF4 /* SimulatorKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6D2A47882C009ABEF4 /* SimulatorKit */; };
+		48BDCD712A4799C9009ABEF4 /* SimulatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDCD702A4799C9009ABEF4 /* SimulatorKit.swift */; };
+		48BDCD732A4799D3009ABEF4 /* CoreSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCD722A4799D3009ABEF4 /* CoreSimulator.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		48BDCBCF2A4614ED009ABEF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48BBE93A2A44D6CA005E4CF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48BDCBC42A46142D009ABEF4;
-			remoteInfo = SimulatorKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		48BD02EC2A44DCED005E818E /* CopyFiles */ = {
@@ -41,73 +31,10 @@
 /* Begin PBXFileReference section */
 		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSupport.swift; sourceTree = "<group>"; };
-		48BD02F32A44E1AB005E818E /* XROS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XROS-Bridging-Header.h"; sourceTree = "<group>"; };
-		48BD02F72A44E375005E818E /* SimDeviceIOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIOClient.h; sourceTree = "<group>"; };
-		48BD02F82A44E375005E818E /* SimDeviceSet+Removed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceSet+Removed.h"; sourceTree = "<group>"; };
-		48BD02F92A44E375005E818E /* SimDevice+Removed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDevice+Removed.h"; sourceTree = "<group>"; };
-		48BD02FA2A44E375005E818E /* SimPasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardItem.h; sourceTree = "<group>"; };
-		48BD02FB2A44E375005E818E /* SimDeviceNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceNotificationManager.h; sourceTree = "<group>"; };
-		48BD02FC2A44E375005E818E /* SimDeviceIOPortConsumer-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceIOPortConsumer-Protocol.h"; sourceTree = "<group>"; };
-		48BD02FD2A44E375005E818E /* SimDeviceIOLoadedBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIOLoadedBundle.h; sourceTree = "<group>"; };
-		48BD02FE2A44E375005E818E /* SimMachPortServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimMachPortServer.h; sourceTree = "<group>"; };
-		48BD02FF2A44E375005E818E /* DefaultDisplayDescriptorState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDisplayDescriptorState.h; sourceTree = "<group>"; };
-		48BD03002A44E375005E818E /* CoreSimulator+BlockDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreSimulator+BlockDefines.h"; sourceTree = "<group>"; };
-		48BD03012A44E375005E818E /* NSKeyedUnarchiver-SimPasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver-SimPasteboardItem.h"; sourceTree = "<group>"; };
-		48BD03022A44E375005E818E /* SimPasteboard-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimPasteboard-Protocol.h"; sourceTree = "<group>"; };
-		48BD03032A44E375005E818E /* NSDictionary-SimEnvp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-SimEnvp.h"; sourceTree = "<group>"; };
-		48BD03042A44E375005E818E /* SimProfilesPathMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimProfilesPathMonitor.h; sourceTree = "<group>"; };
-		48BD03052A44E375005E818E /* NSString-SIMCPUType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SIMCPUType.h"; sourceTree = "<group>"; };
-		48BD03062A44E375005E818E /* NSString-SimServiceContextExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SimServiceContextExtras.h"; sourceTree = "<group>"; };
-		48BD03072A44E375005E818E /* SimPasteboardSyncPoolProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimPasteboardSyncPoolProtocol-Protocol.h"; sourceTree = "<group>"; };
-		48BD03082A44E375005E818E /* SimRuntimePairingReuirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimRuntimePairingReuirements.h; sourceTree = "<group>"; };
-		48BD03092A44E375005E818E /* SimDevicePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDevicePair.h; sourceTree = "<group>"; };
-		48BD030A2A44E375005E818E /* SimDeviceIOPortDescriptorState-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceIOPortDescriptorState-Protocol.h"; sourceTree = "<group>"; };
-		48BD030B2A44E375005E818E /* SimServiceContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimServiceContext.h; sourceTree = "<group>"; };
-		48BD030C2A44E375005E818E /* SimDeviceIOProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceIOProtocol-Protocol.h"; sourceTree = "<group>"; };
-		48BD030D2A44E375005E818E /* SimPasteboardSyncPoolObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardSyncPoolObject.h; sourceTree = "<group>"; };
-		48BD030E2A44E375005E818E /* SimLocalThrowable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimLocalThrowable.h; sourceTree = "<group>"; };
-		48BD030F2A44E375005E818E /* SimDeviceIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIO.h; sourceTree = "<group>"; };
-		48BD03102A44E375005E818E /* SimDeviceBootInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceBootInfo.h; sourceTree = "<group>"; };
-		48BD03112A44E375005E818E /* SimDevicePasteboardConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDevicePasteboardConnection.h; sourceTree = "<group>"; };
-		48BD03122A44E375005E818E /* NSArray-SimArgv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-SimArgv.h"; sourceTree = "<group>"; };
-		48BD03132A44E375005E818E /* NSPasteboardItemDataProvider-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPasteboardItemDataProvider-Protocol.h"; sourceTree = "<group>"; };
-		48BD03142A44E375005E818E /* NSFileManager-CoreSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager-CoreSimulator.h"; sourceTree = "<group>"; };
-		48BD03152A44E375005E818E /* NSKeyedArchiver-SimPasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver-SimPasteboardItem.h"; sourceTree = "<group>"; };
-		48BD03162A44E375005E818E /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
-		48BD03172A44E375005E818E /* NSError-SimError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError-SimError.h"; sourceTree = "<group>"; };
-		48BD03182A44E375005E818E /* NSSecureCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSecureCoding-Protocol.h"; sourceTree = "<group>"; };
-		48BD03192A44E375005E818E /* NSKeyedArchiver-SimSecurely.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedArchiver-SimSecurely.h"; sourceTree = "<group>"; };
-		48BD031A2A44E375005E818E /* SimPasteboardSyncPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardSyncPool.h; sourceTree = "<group>"; };
-		48BD031B2A44E375005E818E /* SimDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDevice.h; sourceTree = "<group>"; };
-		48BD031C2A44E375005E818E /* SimDeviceIOInterface-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceIOInterface-Protocol.h"; sourceTree = "<group>"; };
-		48BD031D2A44E375005E818E /* SimRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimRuntime.h; sourceTree = "<group>"; };
-		48BD031E2A44E375005E818E /* SimNSPasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimNSPasteboardItem.h; sourceTree = "<group>"; };
-		48BD031F2A44E375005E818E /* SimDeviceType+Removed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceType+Removed.h"; sourceTree = "<group>"; };
-		48BD03202A44E375005E818E /* SimNSPasteboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimNSPasteboard.h; sourceTree = "<group>"; };
-		48BD03212A44E375005E818E /* NSCoding-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoding-Protocol.h"; sourceTree = "<group>"; };
-		48BD03222A44E375005E818E /* SimPasteboardItemWrappedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardItemWrappedData.h; sourceTree = "<group>"; };
-		48BD03232A44E375005E818E /* NSUserDefaults-SimDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults-SimDefaults.h"; sourceTree = "<group>"; };
-		48BD03242A44E375005E818E /* SimDeviceNotifier-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDeviceNotifier-Protocol.h"; sourceTree = "<group>"; };
-		48BD03252A44E375005E818E /* NSPasteboardItem-SimPasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPasteboardItem-SimPasteboardItem.h"; sourceTree = "<group>"; };
-		48BD03262A44E375005E818E /* FoundationXPCProtocolProxyable-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoundationXPCProtocolProxyable-Protocol.h"; sourceTree = "<group>"; };
-		48BD03272A44E375005E818E /* NSDictionary-SimSaveWithError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-SimSaveWithError.h"; sourceTree = "<group>"; };
-		48BD03282A44E375005E818E /* SimDevicePasteboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDevicePasteboard.h; sourceTree = "<group>"; };
-		48BD03292A44E375005E818E /* SimPasteboardItemDataProvider-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimPasteboardItemDataProvider-Protocol.h"; sourceTree = "<group>"; };
-		48BD032A2A44E375005E818E /* SimRuntime+Removed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimRuntime+Removed.h"; sourceTree = "<group>"; };
-		48BD032B2A44E375005E818E /* SimDisplayDefaultDescriptorState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDisplayDefaultDescriptorState.h; sourceTree = "<group>"; };
-		48BD032C2A44E375005E818E /* SimPasteboardPortMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardPortMap.h; sourceTree = "<group>"; };
-		48BD032D2A44E375005E818E /* SimDisplayDescriptorState-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimDisplayDescriptorState-Protocol.h"; sourceTree = "<group>"; };
-		48BD032E2A44E375005E818E /* NSKeyedUnarchiver-SimSecurely.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver-SimSecurely.h"; sourceTree = "<group>"; };
-		48BD032F2A44E375005E818E /* SimDevicePasteboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDevicePasteboardItem.h; sourceTree = "<group>"; };
-		48BD03302A44E375005E818E /* SimPasteboardItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimPasteboardItemData.h; sourceTree = "<group>"; };
-		48BD03312A44E375005E818E /* SimDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceType.h; sourceTree = "<group>"; };
-		48BD03322A44E375005E818E /* NSString-SIMPackedVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SIMPackedVersion.h"; sourceTree = "<group>"; };
-		48BD03332A44E375005E818E /* SimDeviceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceSet.h; sourceTree = "<group>"; };
-		48BD03342A44E375005E818E /* SimDeviceIOServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimDeviceIOServer.h; sourceTree = "<group>"; };
-		48BDCB712A4604D8009ABEF4 /* CoreSimulator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreSimulator; path = ../../../../Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator; sourceTree = "<group>"; };
-		48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimulatorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulatorKit.h; sourceTree = "<group>"; };
-		48BDCBCC2A46144B009ABEF4 /* SimulatorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorKit.swift; sourceTree = "<group>"; };
+		48BDCD6B2A478808009ABEF4 /* CoreSimulator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreSimulator; path = ../../../../Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator; sourceTree = "<group>"; };
+		48BDCD6D2A47882C009ABEF4 /* SimulatorKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SimulatorKit; path = "/Applications/Xcode-beta.app/Contents/Developer/Library/PrivateFrameworks/SimulatorKit.framework/Versions/A/SimulatorKit"; sourceTree = "<absolute>"; };
+		48BDCD702A4799C9009ABEF4 /* SimulatorKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimulatorKit.swift; path = SimulatorKit/SimulatorKit.swift; sourceTree = "<group>"; };
+		48BDCD722A4799D3009ABEF4 /* CoreSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreSimulator.h; path = CoreSimulator/CoreSimulator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BDCBCE2A4614E9009ABEF4 /* SimulatorKit.framework in Frameworks */,
-				48BDCB722A4604D8009ABEF4 /* CoreSimulator in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BDCBC22A46142D009ABEF4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				48BDCD6E2A47882C009ABEF4 /* SimulatorKit in Frameworks */,
+				48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +53,9 @@
 		48BBE9392A44D6CA005E4CF8 = {
 			isa = PBXGroup;
 			children = (
-				48BD02F62A44E375005E818E /* CoreSimulator */,
 				48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */,
-				48BDCBC62A46142D009ABEF4 /* SimulatorKit */,
 				48BBE9432A44D6CA005E4CF8 /* Products */,
 				48BD02EE2A44DF64005E818E /* Frameworks */,
-				48BD02F32A44E1AB005E818E /* XROS-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */,
-				48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,97 +70,22 @@
 		48BD02EE2A44DF64005E818E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48BDCB712A4604D8009ABEF4 /* CoreSimulator */,
+				48BDCD722A4799D3009ABEF4 /* CoreSimulator.h */,
+				48BDCD702A4799C9009ABEF4 /* SimulatorKit.swift */,
+				48BDCD6D2A47882C009ABEF4 /* SimulatorKit */,
+				48BDCD6B2A478808009ABEF4 /* CoreSimulator */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		48BD02F62A44E375005E818E /* CoreSimulator */ = {
-			isa = PBXGroup;
-			children = (
-				48BD02F72A44E375005E818E /* SimDeviceIOClient.h */,
-				48BD02F82A44E375005E818E /* SimDeviceSet+Removed.h */,
-				48BD02F92A44E375005E818E /* SimDevice+Removed.h */,
-				48BD02FA2A44E375005E818E /* SimPasteboardItem.h */,
-				48BD02FB2A44E375005E818E /* SimDeviceNotificationManager.h */,
-				48BD02FC2A44E375005E818E /* SimDeviceIOPortConsumer-Protocol.h */,
-				48BD02FD2A44E375005E818E /* SimDeviceIOLoadedBundle.h */,
-				48BD02FE2A44E375005E818E /* SimMachPortServer.h */,
-				48BD02FF2A44E375005E818E /* DefaultDisplayDescriptorState.h */,
-				48BD03002A44E375005E818E /* CoreSimulator+BlockDefines.h */,
-				48BD03012A44E375005E818E /* NSKeyedUnarchiver-SimPasteboardItem.h */,
-				48BD03022A44E375005E818E /* SimPasteboard-Protocol.h */,
-				48BD03032A44E375005E818E /* NSDictionary-SimEnvp.h */,
-				48BD03042A44E375005E818E /* SimProfilesPathMonitor.h */,
-				48BD03052A44E375005E818E /* NSString-SIMCPUType.h */,
-				48BD03062A44E375005E818E /* NSString-SimServiceContextExtras.h */,
-				48BD03072A44E375005E818E /* SimPasteboardSyncPoolProtocol-Protocol.h */,
-				48BD03082A44E375005E818E /* SimRuntimePairingReuirements.h */,
-				48BD03092A44E375005E818E /* SimDevicePair.h */,
-				48BD030A2A44E375005E818E /* SimDeviceIOPortDescriptorState-Protocol.h */,
-				48BD030B2A44E375005E818E /* SimServiceContext.h */,
-				48BD030C2A44E375005E818E /* SimDeviceIOProtocol-Protocol.h */,
-				48BD030D2A44E375005E818E /* SimPasteboardSyncPoolObject.h */,
-				48BD030E2A44E375005E818E /* SimLocalThrowable.h */,
-				48BD030F2A44E375005E818E /* SimDeviceIO.h */,
-				48BD03102A44E375005E818E /* SimDeviceBootInfo.h */,
-				48BD03112A44E375005E818E /* SimDevicePasteboardConnection.h */,
-				48BD03122A44E375005E818E /* NSArray-SimArgv.h */,
-				48BD03132A44E375005E818E /* NSPasteboardItemDataProvider-Protocol.h */,
-				48BD03142A44E375005E818E /* NSFileManager-CoreSimulator.h */,
-				48BD03152A44E375005E818E /* NSKeyedArchiver-SimPasteboardItem.h */,
-				48BD03162A44E375005E818E /* CDStructures.h */,
-				48BD03172A44E375005E818E /* NSError-SimError.h */,
-				48BD03182A44E375005E818E /* NSSecureCoding-Protocol.h */,
-				48BD03192A44E375005E818E /* NSKeyedArchiver-SimSecurely.h */,
-				48BD031A2A44E375005E818E /* SimPasteboardSyncPool.h */,
-				48BD031B2A44E375005E818E /* SimDevice.h */,
-				48BD031C2A44E375005E818E /* SimDeviceIOInterface-Protocol.h */,
-				48BD031D2A44E375005E818E /* SimRuntime.h */,
-				48BD031E2A44E375005E818E /* SimNSPasteboardItem.h */,
-				48BD031F2A44E375005E818E /* SimDeviceType+Removed.h */,
-				48BD03202A44E375005E818E /* SimNSPasteboard.h */,
-				48BD03212A44E375005E818E /* NSCoding-Protocol.h */,
-				48BD03222A44E375005E818E /* SimPasteboardItemWrappedData.h */,
-				48BD03232A44E375005E818E /* NSUserDefaults-SimDefaults.h */,
-				48BD03242A44E375005E818E /* SimDeviceNotifier-Protocol.h */,
-				48BD03252A44E375005E818E /* NSPasteboardItem-SimPasteboardItem.h */,
-				48BD03262A44E375005E818E /* FoundationXPCProtocolProxyable-Protocol.h */,
-				48BD03272A44E375005E818E /* NSDictionary-SimSaveWithError.h */,
-				48BD03282A44E375005E818E /* SimDevicePasteboard.h */,
-				48BD03292A44E375005E818E /* SimPasteboardItemDataProvider-Protocol.h */,
-				48BD032A2A44E375005E818E /* SimRuntime+Removed.h */,
-				48BD032B2A44E375005E818E /* SimDisplayDefaultDescriptorState.h */,
-				48BD032C2A44E375005E818E /* SimPasteboardPortMap.h */,
-				48BD032D2A44E375005E818E /* SimDisplayDescriptorState-Protocol.h */,
-				48BD032E2A44E375005E818E /* NSKeyedUnarchiver-SimSecurely.h */,
-				48BD032F2A44E375005E818E /* SimDevicePasteboardItem.h */,
-				48BD03302A44E375005E818E /* SimPasteboardItemData.h */,
-				48BD03312A44E375005E818E /* SimDeviceType.h */,
-				48BD03322A44E375005E818E /* NSString-SIMPackedVersion.h */,
-				48BD03332A44E375005E818E /* SimDeviceSet.h */,
-				48BD03342A44E375005E818E /* SimDeviceIOServer.h */,
-			);
-			path = CoreSimulator;
-			sourceTree = "<group>";
-		};
-		48BDCBC62A46142D009ABEF4 /* SimulatorKit */ = {
-			isa = PBXGroup;
-			children = (
-				48BDCBC72A46142D009ABEF4 /* SimulatorKit.h */,
-				48BDCBCC2A46144B009ABEF4 /* SimulatorKit.swift */,
-			);
-			path = SimulatorKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		48BDCBC02A46142D009ABEF4 /* Headers */ = {
+		48BDCD372A467008009ABEF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BDCBC82A46142D009ABEF4 /* SimulatorKit.h in Headers */,
+				48BDCD732A4799D3009ABEF4 /* CoreSimulator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +96,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControls" */;
 			buildPhases = (
+				48BDCD6F2A47975D009ABEF4 /* ShellScript */,
+				48BDCD372A467008009ABEF4 /* Headers */,
 				48BBE93E2A44D6CA005E4CF8 /* Sources */,
 				48BBE93F2A44D6CA005E4CF8 /* Frameworks */,
 				48BBE9402A44D6CA005E4CF8 /* Resources */,
@@ -263,30 +106,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				48BDCBD02A4614ED009ABEF4 /* PBXTargetDependency */,
 			);
 			name = XRGyroControls;
 			productName = XROS;
 			productReference = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */;
 			productType = "com.apple.product-type.bundle";
-		};
-		48BDCBC42A46142D009ABEF4 /* SimulatorKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 48BDCBC92A46142D009ABEF4 /* Build configuration list for PBXNativeTarget "SimulatorKit" */;
-			buildPhases = (
-				48BDCBC02A46142D009ABEF4 /* Headers */,
-				48BDCBC12A46142D009ABEF4 /* Sources */,
-				48BDCBC22A46142D009ABEF4 /* Frameworks */,
-				48BDCBC32A46142D009ABEF4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SimulatorKit;
-			productName = SimulatorKit;
-			productReference = 48BDCBC52A46142D009ABEF4 /* SimulatorKit.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -298,10 +122,6 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					48BBE9412A44D6CA005E4CF8 = {
-						CreatedOnToolsVersion = 15.0;
-						LastSwiftMigration = 1500;
-					};
-					48BDCBC42A46142D009ABEF4 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1500;
 					};
@@ -321,7 +141,6 @@
 			projectRoot = "";
 			targets = (
 				48BBE9412A44D6CA005E4CF8 /* XRGyroControls */,
-				48BDCBC42A46142D009ABEF4 /* SimulatorKit */,
 			);
 		};
 /* End PBXProject section */
@@ -334,14 +153,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48BDCBC32A46142D009ABEF4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48BDCD6F2A47975D009ABEF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/SimulatorKit/SimulatorKit.swift",
+				"$(SRCROOT)/CoreSimulator/module.modulemap",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/SimulatorKit.swiftmodule",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Compile SimulatorKit module\nswiftc -emit-module $SRCROOT/SimulatorKit/SimulatorKit.swift -module-name SimulatorKit -I $SRCROOT/CoreSimulator -avoid-emit-module-source-info -emit-module-path $DERIVED_FILES_DIR\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48BBE93E2A44D6CA005E4CF8 /* Sources */ = {
@@ -349,26 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		48BDCBC12A46142D009ABEF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				48BDCBCD2A46144B009ABEF4 /* SimulatorKit.swift in Sources */,
+				48BDCD712A4799C9009ABEF4 /* SimulatorKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		48BDCBD02A4614ED009ABEF4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48BDCBC42A46142D009ABEF4 /* SimulatorKit */;
-			targetProxy = 48BDCBCF2A4614ED009ABEF4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		48BBE9442A44D6CA005E4CF8 /* Debug */ = {
@@ -490,24 +310,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XROS-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "$(DERIVED_FILE_DIR)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = simdeviceui;
@@ -518,95 +331,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "${SRCROOT}";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XROS-Bridging-Header.h";
+				SWIFT_INCLUDE_PATHS = "$(DERIVED_FILE_DIR)";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = simdeviceui;
-			};
-			name = Release;
-		};
-		48BDCBCA2A46142D009ABEF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.SimulatorKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		48BDCBCB2A46142D009ABEF4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.SimulatorKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -627,15 +364,6 @@
 			buildConfigurations = (
 				48BBE9472A44D6CA005E4CF8 /* Debug */,
 				48BBE9482A44D6CA005E4CF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48BDCBC92A46142D009ABEF4 /* Build configuration list for PBXNativeTarget "SimulatorKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				48BDCBCA2A46142D009ABEF4 /* Debug */,
-				48BDCBCB2A46142D009ABEF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

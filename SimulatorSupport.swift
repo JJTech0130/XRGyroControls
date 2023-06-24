@@ -1,13 +1,18 @@
 import Foundation
 import SimulatorKit
+import CoreSimulator
 import AppKit
 
 @objc class SimulatorSupport : NSObject, SimDeviceUserInterfacePlugin {
+    
     private let device: SimDevice
     
     @objc init(with device: SimDevice) {
         self.device = device
         print("XRGyroControls: Initialized with device: \(device)")
+        try! SimDeviceLegacyHIDClient(device: device)
+        
+        //print(SimDeviceLegacyHidClient(device: device))
     }
     
     @objc func overlayView() -> NSView {
