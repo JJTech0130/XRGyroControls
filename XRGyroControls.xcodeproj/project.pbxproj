@@ -11,7 +11,6 @@
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
 		48BDCD6E2A47882C009ABEF4 /* SimulatorKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6D2A47882C009ABEF4 /* SimulatorKit */; };
-		48BDCD712A4799C9009ABEF4 /* SimulatorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BDCD702A4799C9009ABEF4 /* SimulatorKit.swift */; };
 		48BDCD732A4799D3009ABEF4 /* CoreSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCD722A4799D3009ABEF4 /* CoreSimulator.h */; };
 /* End PBXBuildFile section */
 
@@ -184,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */,
-				48BDCD712A4799C9009ABEF4 /* SimulatorKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
