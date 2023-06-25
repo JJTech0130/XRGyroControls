@@ -11,7 +11,6 @@
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
 		48BDCD6E2A47882C009ABEF4 /* SimulatorKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6D2A47882C009ABEF4 /* SimulatorKit */; };
-		48BDCD732A4799D3009ABEF4 /* CoreSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BDCD722A4799D3009ABEF4 /* CoreSimulator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48BDCD732A4799D3009ABEF4 /* CoreSimulator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +163,7 @@
 			inputPaths = (
 				"$(SRCROOT)/SimulatorKit/SimulatorKit.swift",
 				"$(SRCROOT)/CoreSimulator/module.modulemap",
+				"$(SRCROOT)/CoreSimulator/CoreSimulator.h",
 			);
 			outputFileListPaths = (
 			);
@@ -173,7 +172,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Compile SimulatorKit module\nswiftc -emit-module $SRCROOT/SimulatorKit/SimulatorKit.swift -module-name SimulatorKit -I $SRCROOT/CoreSimulator -avoid-emit-module-source-info -emit-module-path $DERIVED_FILES_DIR\n";
+			shellScript = "# Compile SimulatorKit module\nswiftc -emit-module $SRCROOT/SimulatorKit/SimulatorKit.swift -module-name SimulatorKit -I $SRCROOT/CoreSimulator -avoid-emit-module-source-info -emit-module-path $DERIVED_FILES_DIR -Onone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
