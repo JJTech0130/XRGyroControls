@@ -13,6 +13,7 @@ class IndigoHIDMessage {
     public var data: [UInt8] = []
     
     public func as_struct() -> UnsafeMutablePointer<IndigoHIDMessageStruct> {
+        print("data: \(data)")
         // Make sure that the backing data is the correct size
         guard data.count == MemoryLayout<IndigoHIDMessageStruct>.size else {
             fatalError("IndigoHIDMessage backing data is not the correct size")
@@ -42,10 +43,7 @@ class IndigoHIDMessage {
         
         data[0x30..<0x30+4] = [0x2C, 0x01, 0x00, 0x00] // Int32: 300
         
-        //Float
-        //let firstValue: Float = 1.0
-        //l//et firstValueBytes = withUnsafeBytes(of: firstValue) { Array($0) }
-        //print("firstValueBytes: \(firstValueBytes)")
+        write_simd_bytes(q0: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F], q1: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F])
     }
     
     public func write_simd_bytes(q0: [UInt8], q1: [UInt8]) {
