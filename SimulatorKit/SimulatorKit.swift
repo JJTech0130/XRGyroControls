@@ -21,6 +21,6 @@ import CoreSimulator
     @objc public init(device: SimDevice) throws {}
    
     // Offset: 0x140
-    @objc public func send(message: Swift.UnsafeMutablePointer<IndigoHIDMessageStruct>) {}
+    @objc public func send(message: UnsafeMutablePointer<IndigoHIDMessageStruct>) {}
 
 }

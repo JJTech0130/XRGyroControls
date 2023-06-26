@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4825CFDE2A48725C0034C938 /* IndigoHID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825CFDD2A48725C0034C938 /* IndigoHID.swift */; };
 		48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */; };
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4825CFDD2A48725C0034C938 /* IndigoHID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoHID.swift; sourceTree = "<group>"; };
 		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSupport.swift; sourceTree = "<group>"; };
 		48BDCD6B2A478808009ABEF4 /* CoreSimulator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreSimulator; path = ../../../../Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		48BBE9392A44D6CA005E4CF8 = {
 			isa = PBXGroup;
 			children = (
+				4825CFDD2A48725C0034C938 /* IndigoHID.swift */,
 				48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */,
 				48BBE9432A44D6CA005E4CF8 /* Products */,
 				48BD02EE2A44DF64005E818E /* Frameworks */,
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */,
+				4825CFDE2A48725C0034C938 /* IndigoHID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
