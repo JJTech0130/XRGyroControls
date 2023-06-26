@@ -17,7 +17,8 @@ import AppKit
         
         var cnt = 0
         // Schedule a HID message to be sent every 5 seconds
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+            cnt += 1
             self.send_test_message(cnt)
         }
     
@@ -26,15 +27,8 @@ import AppKit
     func send_test_message(_ cnt: Int) {
         print("Sending HID message")
         let message = IndigoHIDMessage()
-
-        // If it's even
-        if cnt % 2 == 0 {
-            message.write_simd_bytes(q0: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F], q1: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F])
-        } else {
-            let q1: [UInt8] = [0x25, 0x3d, 0x1a, 0xbd, 0x84, 0xe1, 0x73, 0x3f, 0x41, 0x7b, 0x07, 0x3e, 0xb6, 0xd2, 0x8a, 0x3e]
-            message.write_simd_bytes(q0: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F], q1: q1)
-        }
-
+        // Should create a very slow rise
+        message.pose(x: 0.0, y: Float(cnt) / 1000, z: 0.0, pitch: 0.0, yaw: 0.0, roll: 0.0)
         hid_client.send(message: message.as_struct())
     }
     

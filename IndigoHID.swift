@@ -42,26 +42,22 @@ class IndigoHIDMessage {
         data[0x20] = 0x01
         
         data[0x30..<0x30+4] = [0x2C, 0x01, 0x00, 0x00] // Int32: 300
-        
-        write_simd_bytes(q0: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F], q1: [0,0,0,0, 0,0,0,0, 0,0,0,0, 0,0,0x80,0x3F])
     }
     
-    public func write_simd_bytes(q0: [UInt8], q1: [UInt8]) {
-        // Make sure that q0 and q1 are both 16 bytes long
-        guard q0.count == 16 && q1.count == 16 else {
-            fatalError("q0 and q1 must both be 16 bytes long")
-        }
-        
-        // First 8 bytes of q0 are written to 0x54
-        data[0x54..<0x54+8] = q0[0..<8]
-        // Next 4 bytes of q0 are written to 0x5C
-        data[0x5C..<0x5C+4] = q0[8..<12]
-        // All 16 bytes of q1 are written to 0x64
-        data[0x64..<0x64+16] = q1[0..<16]
+    private func write_float(_ float: Float, offset: Int) {
+        let bytes: [UInt8] = withUnsafeBytes(of: float) { Array($0) }
+        data[offset..<offset+bytes.count] = bytes[...]
     }
     
-    
-    
-    
-    
+    public func pose(x: Float, y: Float, z: Float, pitch: Float, yaw: Float, roll: Float) {
+        write_float(x, offset: 0x54)
+        write_float(y, offset: 0x58)
+        write_float(z, offset: 0x5C)
+        
+        write_float(pitch, offset: 0x64)
+        write_float(yaw, offset: 0x68)
+        write_float(roll, offset: 0x6C)
+        
+        write_float(1.0, offset: 0x70) // Not sure why, but this is important
+    }
 }
