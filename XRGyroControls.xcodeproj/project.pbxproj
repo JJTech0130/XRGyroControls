@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4825CFDE2A48725C0034C938 /* IndigoHID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825CFDD2A48725C0034C938 /* IndigoHID.swift */; };
+		48B9A8FD2A4CC594000208F4 /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9A8FC2A4CC594000208F4 /* UDPServer.swift */; };
 		48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */; };
 		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
 		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		4825CFDD2A48725C0034C938 /* IndigoHID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoHID.swift; sourceTree = "<group>"; };
 		48B9A8FB2A4A1393000208F4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48B9A8FC2A4CC594000208F4 /* UDPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPServer.swift; sourceTree = "<group>"; };
 		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSupport.swift; sourceTree = "<group>"; };
 		48BDCD6B2A478808009ABEF4 /* CoreSimulator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreSimulator; path = ../../../../Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		48BBE9392A44D6CA005E4CF8 = {
 			isa = PBXGroup;
 			children = (
+				48B9A8FC2A4CC594000208F4 /* UDPServer.swift */,
 				48B9A8FB2A4A1393000208F4 /* README.md */,
 				4825CFDD2A48725C0034C938 /* IndigoHID.swift */,
 				48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */,
@@ -188,6 +191,7 @@
 			files = (
 				48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */,
 				4825CFDE2A48725C0034C938 /* IndigoHID.swift in Sources */,
+				48B9A8FD2A4CC594000208F4 /* UDPServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

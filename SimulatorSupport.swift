@@ -16,7 +16,7 @@ import Spatial
         self.hid_client = try! SimDeviceLegacyHIDClient(device: device)
         print("XRGyroControls: Initialized HID client")
         
-        //server = try! UDPServer(on: 9985)
+        server = try! UDPServer(on: 9985)
 
         super.init()
         
