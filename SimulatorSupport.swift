@@ -30,7 +30,7 @@ import Spatial
         
         hid_client.send(message: IndigoHIDMessage.camera(pose).as_struct())
         
-        hid_client.send(message: IndigoHIDMessage.manipulator(pose: pose, gaze: Ray3D(direction: Vector3D(x: -0.40874016, y: -0.07154943, z: -0.9098418))).as_struct())
+        hid_client.send(message: IndigoHIDMessage.manipulator(pose: pose, gaze: Ray3D(direction: Vector3D(x: -0.40874016, y: -0.07154943, z: -0.9098418)), pinch: false).as_struct())
     }
     
     @objc func overlayView() -> NSView {

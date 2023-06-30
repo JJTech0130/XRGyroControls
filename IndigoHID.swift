@@ -69,7 +69,7 @@ class IndigoHIDMessage {
         return message
     }
     
-    public static func manipulator(pose: Pose3D, gaze: Ray3D) -> IndigoHIDMessage {
+    public static func manipulator(pose: Pose3D, gaze: Ray3D, pinch: Bool) -> IndigoHIDMessage {
         let message = IndigoHIDMessage()
         
         message.write(302, at: 0x30)
@@ -83,7 +83,7 @@ class IndigoHIDMessage {
         message.data[0x3A] = 0 // ?
         message.data[0x3B] = 3
         
-        message.data[0x3F] = 0 // pinch right
+        message.data[0x3F] = pinch ? 1 : 0 // pinch right
         message.data[0x40] = 1
         message.data[0x41] = 0 // ?
         

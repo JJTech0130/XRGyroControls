@@ -74,6 +74,7 @@ class UDPServer {
             struct jsonManipulator: Codable {
                 var pose: jsonPose
                 var gaze: jsonGaze
+                var pinch: Bool
             }
             
             var camera: jsonPose?
@@ -91,7 +92,9 @@ class UDPServer {
         if let manipulator = message.manipulator {
             self.hid_client.send(message: IndigoHIDMessage.manipulator(
                 pose: Pose3D(position: manipulator.pose.position, rotation: simd_quatf(vector: manipulator.pose.rotation)),
-                gaze: Ray3D(origin: Point3D(vector: simd_double3(manipulator.gaze.origin)), direction: Vector3D(vector: simd_double3(manipulator.gaze.direction)))).as_struct())
+                gaze: Ray3D(origin: Point3D(vector: simd_double3(manipulator.gaze.origin)), direction: Vector3D(vector: simd_double3(manipulator.gaze.direction))),
+                pinch: manipulator.pinch
+            ).as_struct())
         }
         
         if let dial = message.dial {
