@@ -8,21 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		4825CFDE2A48725C0034C938 /* IndigoHID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825CFDD2A48725C0034C938 /* IndigoHID.swift */; };
+		4842176F2A4F6AD900C5BDA6 /* XRGyroControlsType.simdevicetype in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4842176A2A4F661900C5BDA6 /* XRGyroControlsType.simdevicetype */; };
+		484217722A4F6B4100C5BDA6 /* capabilities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484217712A4F6B4100C5BDA6 /* capabilities.plist */; };
+		484217742A4F6B6E00C5BDA6 /* profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484217732A4F6B6E00C5BDA6 /* profile.plist */; };
 		48B9A8FD2A4CC594000208F4 /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9A8FC2A4CC594000208F4 /* UDPServer.swift */; };
 		48BBE94A2A44D80A005E4CF8 /* SimulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */; };
-		48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */; };
+		48BD02ED2A44DCF6005E818E /* XRGyroControlsUI.simdeviceui in CopyFiles */ = {isa = PBXBuildFile; fileRef = 48BBE9422A44D6CA005E4CF8 /* XRGyroControlsUI.simdeviceui */; };
 		48BDCD6C2A478808009ABEF4 /* CoreSimulator in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6B2A478808009ABEF4 /* CoreSimulator */; };
 		48BDCD6E2A47882C009ABEF4 /* SimulatorKit in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BDCD6D2A47882C009ABEF4 /* SimulatorKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		4842176E2A4F6AC900C5BDA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_DEVELOPER_DIR)/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes";
+			dstSubfolderSpec = 0;
+			files = (
+				4842176F2A4F6AD900C5BDA6 /* XRGyroControlsType.simdevicetype in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48BD02EC2A44DCED005E818E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/UserInterface";
+			dstPath = "$(SYSTEM_DEVELOPER_DIR)/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/UserInterface";
 			dstSubfolderSpec = 0;
 			files = (
-				48BD02ED2A44DCF6005E818E /* XRGyroControls.simdeviceui in CopyFiles */,
+				48BD02ED2A44DCF6005E818E /* XRGyroControlsUI.simdeviceui in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,9 +43,12 @@
 
 /* Begin PBXFileReference section */
 		4825CFDD2A48725C0034C938 /* IndigoHID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoHID.swift; sourceTree = "<group>"; };
+		4842176A2A4F661900C5BDA6 /* XRGyroControlsType.simdevicetype */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControlsType.simdevicetype; sourceTree = BUILT_PRODUCTS_DIR; };
+		484217712A4F6B4100C5BDA6 /* capabilities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = capabilities.plist; sourceTree = "<group>"; };
+		484217732A4F6B6E00C5BDA6 /* profile.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = profile.plist; sourceTree = "<group>"; };
 		48B9A8FB2A4A1393000208F4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		48B9A8FC2A4CC594000208F4 /* UDPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPServer.swift; sourceTree = "<group>"; };
-		48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControls.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
+		48BBE9422A44D6CA005E4CF8 /* XRGyroControlsUI.simdeviceui */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XRGyroControlsUI.simdeviceui; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBE9492A44D80A005E4CF8 /* SimulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSupport.swift; sourceTree = "<group>"; };
 		48BDCD6B2A478808009ABEF4 /* CoreSimulator */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CoreSimulator; path = ../../../../Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator; sourceTree = "<group>"; };
 		48BDCD6D2A47882C009ABEF4 /* SimulatorKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SimulatorKit; path = "/Applications/Xcode-beta.app/Contents/Developer/Library/PrivateFrameworks/SimulatorKit.framework/Versions/A/SimulatorKit"; sourceTree = "<absolute>"; };
@@ -41,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		484217672A4F661900C5BDA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48BBE93F2A44D6CA005E4CF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,9 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		484217702A4F6B2600C5BDA6 /* SimulatorType */ = {
+			isa = PBXGroup;
+			children = (
+				484217712A4F6B4100C5BDA6 /* capabilities.plist */,
+				484217732A4F6B6E00C5BDA6 /* profile.plist */,
+			);
+			path = SimulatorType;
+			sourceTree = "<group>";
+		};
 		48BBE9392A44D6CA005E4CF8 = {
 			isa = PBXGroup;
 			children = (
+				484217702A4F6B2600C5BDA6 /* SimulatorType */,
 				48B9A8FC2A4CC594000208F4 /* UDPServer.swift */,
 				48B9A8FB2A4A1393000208F4 /* README.md */,
 				4825CFDD2A48725C0034C938 /* IndigoHID.swift */,
@@ -68,7 +101,8 @@
 		48BBE9432A44D6CA005E4CF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */,
+				48BBE9422A44D6CA005E4CF8 /* XRGyroControlsUI.simdeviceui */,
+				4842176A2A4F661900C5BDA6 /* XRGyroControlsType.simdevicetype */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,23 +120,30 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		48BDCD372A467008009ABEF4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		48BBE9412A44D6CA005E4CF8 /* XRGyroControls */ = {
+		484217692A4F661900C5BDA6 /* XRGyroControlsType */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControls" */;
+			buildConfigurationList = 4842176D2A4F661900C5BDA6 /* Build configuration list for PBXNativeTarget "XRGyroControlsType" */;
+			buildPhases = (
+				484217662A4F661900C5BDA6 /* Sources */,
+				484217672A4F661900C5BDA6 /* Frameworks */,
+				484217682A4F661900C5BDA6 /* Resources */,
+				4842176E2A4F6AC900C5BDA6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XRGyroControlsType;
+			productName = "XRGyroControls Vision Pro";
+			productReference = 4842176A2A4F661900C5BDA6 /* XRGyroControlsType.simdevicetype */;
+			productType = "com.apple.product-type.bundle";
+		};
+		48BBE9412A44D6CA005E4CF8 /* XRGyroControlsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControlsUI" */;
 			buildPhases = (
 				48BDCD6F2A47975D009ABEF4 /* ShellScript */,
-				48BDCD372A467008009ABEF4 /* Headers */,
 				48BBE93E2A44D6CA005E4CF8 /* Sources */,
 				48BBE93F2A44D6CA005E4CF8 /* Frameworks */,
 				48BBE9402A44D6CA005E4CF8 /* Resources */,
@@ -112,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = XRGyroControls;
+			name = XRGyroControlsUI;
 			productName = XROS;
-			productReference = 48BBE9422A44D6CA005E4CF8 /* XRGyroControls.simdeviceui */;
+			productReference = 48BBE9422A44D6CA005E4CF8 /* XRGyroControlsUI.simdeviceui */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +167,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					484217692A4F661900C5BDA6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					48BBE9412A44D6CA005E4CF8 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1500;
@@ -145,12 +189,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48BBE9412A44D6CA005E4CF8 /* XRGyroControls */,
+				48BBE9412A44D6CA005E4CF8 /* XRGyroControlsUI */,
+				484217692A4F661900C5BDA6 /* XRGyroControlsType */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		484217682A4F661900C5BDA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484217742A4F6B6E00C5BDA6 /* profile.plist in Resources */,
+				484217722A4F6B4100C5BDA6 /* capabilities.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48BBE9402A44D6CA005E4CF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +239,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		484217662A4F661900C5BDA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48BBE93E2A44D6CA005E4CF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +259,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4842176B2A4F661900C5BDA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.XRGyroControls.SimDeviceType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = simdevicetype;
+			};
+			name = Debug;
+		};
+		4842176C2A4F661900C5BDA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.XRGyroControls.SimDeviceType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = simdevicetype;
+			};
+			name = Release;
+		};
 		48BBE9442A44D6CA005E4CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,10 +417,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
+				INFOPLIST_KEY_NSPrincipalClass = XRGyroControlsUI.SimulatorSupport;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.XRGyroControls.SimDeviceUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -341,10 +438,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_NAME).SimulatorSupport";
+				INFOPLIST_KEY_NSPrincipalClass = XRGyroControlsUI.SimulatorSupport;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CoreSimulator.SimDeviceUserInterface.XROS;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jjtech.XRGyroControls.SimDeviceUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -357,6 +454,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4842176D2A4F661900C5BDA6 /* Build configuration list for PBXNativeTarget "XRGyroControlsType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4842176B2A4F661900C5BDA6 /* Debug */,
+				4842176C2A4F661900C5BDA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48BBE93D2A44D6CA005E4CF8 /* Build configuration list for PBXProject "XRGyroControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -366,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControls" */ = {
+		48BBE9462A44D6CA005E4CF8 /* Build configuration list for PBXNativeTarget "XRGyroControlsUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48BBE9472A44D6CA005E4CF8 /* Debug */,

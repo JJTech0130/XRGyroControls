@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "484217692A4F661900C5BDA6"
-               BuildableName = "XRGyroControlsType.simdevicetype"
-               BlueprintName = "XRGyroControlsType"
-               ReferencedContainer = "container:XRGyroControls.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "48BBE9412A44D6CA005E4CF8"
                BuildableName = "XRGyroControlsUI.simdeviceui"
                BlueprintName = "XRGyroControlsUI"
@@ -53,10 +39,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <PathRunnable
-         runnableDebuggingMode = "0"
-         FilePath = "/Applications/Xcode-beta.app/Contents/Developer/Applications/Simulator.app">
-      </PathRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -67,9 +49,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "484217692A4F661900C5BDA6"
-            BuildableName = "XRGyroControlsType.simdevicetype"
-            BlueprintName = "XRGyroControlsType"
+            BlueprintIdentifier = "48BBE9412A44D6CA005E4CF8"
+            BuildableName = "XRGyroControlsUI.simdeviceui"
+            BlueprintName = "XRGyroControlsUI"
             ReferencedContainer = "container:XRGyroControls.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
