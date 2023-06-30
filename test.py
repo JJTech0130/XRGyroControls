@@ -49,21 +49,22 @@ def angles_to_coords(angle, pitch):
   return [x,y,z]
 
 message = {
-  "camera" : {
-    "position" : [0,0,0],
-    "rotation" : euler_to_quaternion(d2r(40),d2r(0),d2r(0))
-  },
-  "manipulator" : {
-    "pose" : {
-      "position" : [0,0,0],
-      "rotation" : euler_to_quaternion(d2r(40),d2r(0),d2r(0))
-    },
-    "gaze" : {
-      "origin" : [0,0,0],
-      "direction" : [-0.40874016, -0.07154943, -0.9098418]
-      #"direction": [0,0,0]
-    }
-  }
+  # "camera" : {
+  #    "position" : [0,0,0],
+  #    "rotation" : euler_to_quaternion(d2r(40),d2r(0),d2r(0))
+  # },
+  # "manipulator" : {
+  #   "pose" : {
+  #     "position" : [0,0,0],
+  #     "rotation" : euler_to_quaternion(d2r(40),d2r(0),d2r(0))
+  #   },
+  #   "gaze" : {
+  #     "origin" : [0,0,0],
+  #     "direction" : [-0.40874016, -0.07154943, -0.9098418]
+  #     #"direction": [0,0,0]
+  #   }
+  # }
+  "dial": 1.0,
 }
 print(json.dumps(message))
 sock.sendall(json.dumps(message).encode('utf-8'))

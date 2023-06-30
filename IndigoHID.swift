@@ -94,4 +94,18 @@ class IndigoHIDMessage {
         
         return message
     }
+    
+    // This doesn't have any observable effects that I can see, but I implemented it for completeness sake.
+    public static func dial(_ value: Double) -> IndigoHIDMessage {
+        let message = IndigoHIDMessage()
+        
+        message.data[0x20] = 0x06
+        
+        message.write(value, at: 0x38)
+        
+        message.data[0x4C] = 0xC8
+        message.data[0x2C] = 0x10
+        
+        return message
+    }
 }

@@ -76,18 +76,27 @@ class UDPServer {
                 var gaze: jsonGaze
             }
             
-            var camera: jsonPose
-            var manipulator: jsonManipulator
+            var camera: jsonPose?
+            var manipulator: jsonManipulator?
+            var dial: Double?
         }
         
         guard let message = try? JSONDecoder().decode(jsonMessage.self, from: data) else { return false }
         print("Got JSON message: \(message)")
         
-        self.hid_client.send(message: IndigoHIDMessage.camera(Pose3D(position: message.camera.position, rotation: simd_quatf(vector: message.camera.rotation))).as_struct())
+        if let camera = message.camera {
+            self.hid_client.send(message: IndigoHIDMessage.camera(Pose3D(position: camera.position, rotation: simd_quatf(vector: camera.rotation))).as_struct())
+        }
         
-        self.hid_client.send(message: IndigoHIDMessage.manipulator(
-            pose: Pose3D(position: message.manipulator.pose.position, rotation: simd_quatf(vector: message.manipulator.pose.rotation)),
-            gaze: Ray3D(origin: Point3D(vector: simd_double3(message.manipulator.gaze.origin)), direction: Vector3D(vector: simd_double3(message.manipulator.gaze.direction)))).as_struct())
+        if let manipulator = message.manipulator {
+            self.hid_client.send(message: IndigoHIDMessage.manipulator(
+                pose: Pose3D(position: manipulator.pose.position, rotation: simd_quatf(vector: manipulator.pose.rotation)),
+                gaze: Ray3D(origin: Point3D(vector: simd_double3(manipulator.gaze.origin)), direction: Vector3D(vector: simd_double3(manipulator.gaze.direction)))).as_struct())
+        }
+        
+        if let dial = message.dial {
+            self.hid_client.send(message: IndigoHIDMessage.dial(dial).as_struct())
+        }
         
         return true
     }
